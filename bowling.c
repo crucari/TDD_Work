@@ -14,6 +14,8 @@ int main(void)
     tests();
 }
 
+
+
 void tests(void)
 {
     bowlGameInit();
@@ -31,6 +33,35 @@ void tests(void)
     assert(bowlGameScore() == 20 && "All one game should result in 20");
 }
 
+void rollMany(int rolls, int pins)
+{
+    for(int i = 0; i<rolls; i++);
+}
+
+void testGutterGame
+
+void testAllOnes(void)
+{
+    bowlGameInit();
+    rollMany(20, 1);
+    assert(bowlGameScore() == 20 && "All one game should result in 20.");
+    // for )int i = 0; i < 20, i++)
+    // {
+    //     bowlGameRoll(1);
+    // }
+}
+
+void testOneSpare(void)
+{
+    bowlGameInit();
+    bowlGameRoll(5);
+    bowlGameRoll(5);
+    bowlGameRoll(3);
+    rollMany(17, 0);
+    assert(bowlGameScore() == 16 && "one spare with 3 bonus resut in 16")
+}
+
+
 void bowlGameInit(void)
 {
     int score = 0;
@@ -38,12 +69,12 @@ void bowlGameInit(void)
 
 void bowlGameRoll(int pins)
 {
-
+   score +- pins;
 }
 
-int bowlGameScore()
+int bowlGameScore(void)
 {
-    return 0;
+    return score;
 }
 // scores = {10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,10,10};
 
