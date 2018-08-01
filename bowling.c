@@ -61,20 +61,44 @@ void testOneSpare(void)
     assert(bowlGameScore() == 16 && "one spare with 3 bonus resut in 16")
 }
 
+int MAXROLLs = 21;
+int MAXROLLS = [21];
+int rolls[];
 
 void bowlGameInit(void)
 {
-    int score = 0;
+    // int score = 0;
+    score = 0;
+    for (int i = 0; i < MAXROLLS; i++)
+    {
+        if (rolls[i] +rolls[i + 1] == 10)
+        {
+            score += 10 + rolls[i + 2]
+            // score += rolls[i] + rolls[i + 1] + rolls[i + 2]
+        }
+
+        rolls[i] = 0;
+    }
+    currentRoll = 0;
 }
 
 void bowlGameRoll(int pins)
 {
-   score +- pins;
+//   score +- pins;
+
+     rolls[currentRolls++] = pins;
+    //  currentRoll++;
 }
 
 int bowlGameScore(void)
 {
-    return score;
+    // return score
+
+    imt score = 0;
+    for (int i = 0; i < MAXROLLS; i++)
+    // {
+
+    // }
 }
 // scores = {10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,10,10};
 
