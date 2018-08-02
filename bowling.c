@@ -61,7 +61,7 @@ void testOneSpare(void)
     assert(bowlGameScore() == 16 && "one spare with 3 bonus resut in 16")
 }
 
-void testOneStrike()
+void testOneStrike() //tests
 {
     bowlGameInt();
     bowlGameRoll(10);
